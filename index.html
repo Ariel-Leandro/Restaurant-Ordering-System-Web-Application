@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Na Hora Hamburgueria</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header-left">
+
+        <img
+            src="imagens/logo/logo.png"
+            class="logo-img"
+            alt="Logo">
+
+            
+        </div>
+        
+        <div class="header-center">
+            
+            <div class="delivery-info">
+                Taxa de entrega a partir de R$ 7,00
+            </div>
+            
+            <div
+                id="storeStatus"
+                class="store-status">
+            </div>
+     
+
+    </div>
+
+<button id="btn-cart-top" class="btn-cart">
+    🛒 Finalizar Pedido
+</button>
+
+</header>
+
+<section class="hero">
+
+    <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide hero-carousel"
+        data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img
+                    src="imagens/carrossel/caixa especial com 5 lanches + mantiquera 2L.png"
+                    class="d-block w-100"
+                    alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="imagens/carrossel/caixa especial com 4 lanches + mantiqueira 2L.png"
+                    class="d-block w-100"
+                    alt="">
+            </div>
+
+            <div class="carousel-item">
+                <img
+                    src="imagens/carrossel/caixa especial com 3 lanches + mantiqueira 2L.jfif"
+                    class="d-block w-100"
+                    alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+</section>
+
+<section class="container">
+
+    <input
+        id="search"
+        placeholder="Buscar lanche...">
+
+    <div id="filters"></div>
+
+    <div id="menu"></div>
+
+</section>
+
+<section
+    id="pedido"
+    class="container">
+
+    <div class="box">
+
+        <h2>📝 Seus Dados</h2>
+
+        <form id="profileForm">
+
+            <input
+                id="name"
+                placeholder="Seu nome"
+                required>
+
+            <input
+                id="phone"
+                placeholder="Telefone"
+                required>
+
+            <input
+                id="address"
+                placeholder="Endereço"
+                required>
+
+            <textarea
+                id="preferences"
+                placeholder="Observações..."></textarea>
+
+        </form>
+
+    </div>
+
+</section>
+
+<section id="carrinho" class="container">
+
+    <div class="box">
+
+        <h2>🛒 Seu Pedido</h2>
+
+        <div id="cart"></div>
+
+        <div class="total-box">
+
+            <span>Total:</span>
+
+            <strong>
+                R$ <span id="total">0.00</span>
+            </strong>
+
+        </div>
+
+        <button
+            id="finishOrder"
+            class="btn-finalizar">
+
+            Finalizar Pedido no WhatsApp
+
+        </button>
+
+    </div>
+
+</section>
+
+<a
+    class="insta-fixo"
+    href="https://instagram.com/@na_hora.lanches"
+    target="_blank">
+
+    <img
+        src="imagens/logo/instagram.png"
+        alt="Instagram"
+        class="insta-icon">
+
+</a>
+
+
+<a
+    class="wpp-fixo"
+    href="https://wa.me/553598244473"
+    target="_blank">
+
+    <img
+        src="imagens/logo/wpp.png"
+        alt="WhatsApp"
+        class="wpp-icon">
+</img>
+
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
